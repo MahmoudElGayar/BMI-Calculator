@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/master.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>BMI Calculater</title>
+	</head>
+
+	<body class="text-light bg-dark">
+		<div class="container">
+			<div class="form d-flex flex-column">
+				<label class="m-2" for="height">Height (cm)</label>
+				<input class="m-2 form-control" type="number" id="height" />
+				<label class="m-2" for="weight">Weight (kg)</label>
+				<input class="m-2 form-control" type="number" id="weight" />
+				<label class="m-2" for="age">Age</label>
+				<input class="m-2 form-control" type="number" id="age" />
+				<div class="m-2 btn form-control text-light btn-outline-secondary">
+					Submit
+				</div>
+			</div>
+
+			<div class="result d-none m-2 p-2 b-radius">
+				<h1 class="text-center">
+					Your BMI is&nbsp;(&nbsp;<span class="result-span"></span
+					>&nbsp;)&nbsp;<span class="situation"></span>
+				</h1>
+			</div>
+		</div>
+	</body>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="module" src="js/popper.js"></script>
+</html>
+
+<style></style>
